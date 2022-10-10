@@ -1,1 +1,1 @@
-const ok = "Oi"
+const ok = 'Oi';
