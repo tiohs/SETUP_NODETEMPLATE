@@ -1,1 +1,1 @@
-console.log('Olá mundo !')
+const ok = "Oi"
