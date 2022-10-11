@@ -10,7 +10,7 @@
     "test": "jest --passWithNoTests",
     "test:watch": "yarn test --watch",
     "test:staged": "yarn test --findRelatedTests",
-    "test:push": "yarn test --coverage"
+    "test:coverage": "yarn test --coverage"
   },
   "devDependencies": {
     "@types/jest": "^29.1.2",
