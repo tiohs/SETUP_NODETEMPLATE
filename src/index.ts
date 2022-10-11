@@ -1,5 +1,9 @@
+import name from '@/one/two/tree';
+
 export default class Person {
   public sayMyName() {
-    return 'Hamilton';
+    return name;
   }
 }
+
+console.log(new Person().sayMyName());

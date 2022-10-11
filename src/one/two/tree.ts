@@ -1,3 +1,2 @@
-import Person from '@/index';
-
-console.log(new Person().sayMyName());
+const name = 'Hamilton';
+export default name;
