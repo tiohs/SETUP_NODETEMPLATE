@@ -1,2 +1,5 @@
-const Hello = 'Ola mundo ';
-console.log(Hello);
+export default class Person {
+  public sayMyName() {
+    return 'Hamilton';
+  }
+}
