@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc && tsc-alias",
-    "start": "node dist/index.js",
+    "start": "pm2-runtime start ecosystem.config.js --env production",
     "start:dev": "nodemon --watch 'src/' --exec 'ts-node -r tsconfig-paths/register src/index.ts' -e ts",
     "husky:prepare": "husky install",
     "test": "jest --passWithNoTests",
