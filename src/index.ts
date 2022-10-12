@@ -10,6 +10,6 @@ app.get('/', (request, response) => {
     message: 'Hello World! Init your project nodejs !',
   });
 });
-app.listen(4000, () => {
+app.listen(process.env.PORT || 4000, () => {
   console.log('Localhost port 4000');
 });
