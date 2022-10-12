@@ -1,9 +1,15 @@
-import name from '@/one/two/tree';
+import express, { response } from 'express';
+import cors from 'cors';
 
-export default class Person {
-  public sayMyName() {
-    return name;
-  }
-}
+const app = express();
 
-console.log(new Person().sayMyName());
+app.use(cors());
+app.use(express.json());
+app.get('/', (request, response) => {
+  return response.status(200).json({
+    message: 'Hello World! Init your project nodejs !',
+  });
+});
+app.listen(4000, () => {
+  console.log('Localhost port 4000');
+});
